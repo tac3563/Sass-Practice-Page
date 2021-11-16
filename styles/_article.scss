@@ -1,0 +1,28 @@
+.article-title {
+    @include titleStyles();
+  }
+  
+  .variables-title {
+    @include titleStyles();
+  }
+  
+  .mixins-title {
+    @include titleStyles();
+  }
+  
+  .imports-title {
+    @include titleStyles();
+  }
+  
+  .nesting-title {
+    @include titleStyles;
+  }
+  
+  .extensions-title {
+    @include titleStyles;
+  }
+  
+  .operator-title {
+    @include titleStyles;
+  }
+  

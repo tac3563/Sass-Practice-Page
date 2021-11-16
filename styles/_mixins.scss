@@ -1,0 +1,37 @@
+@mixin mainTitleStyles {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $main-title-size;
+    margin: 1em auto;
+  }
+  
+  @mixin titleStyles() {
+    font-size: $title-size;
+    color: $secondary-color;
+    margin: $title-margin;
+  }
+  
+  @mixin pStyles() {
+    font-size: $text-size;
+    color: $primary-color;
+    margin: $text-margin;
+  }
+  
+  @mixin flexBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @mixin flexAround() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  @mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

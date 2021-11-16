@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Aside -->
+      <aside>
+        <div class="aside-container">
+          <h3 class="aside-title">Sass Overview:</h3>
+          <ul class="aside-list">
+            <li>Variables</li>
+            <li>Mixins</li>
+            <li>Modules/Imports</li>
+            <li>Nesting</li>
+            <li>Extensions/Inheritance</li>
+            <li>Operators</li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+          <h1 class="header-title">Sass Practice Page</h1>
+        </header>
+        <!-- Main -->
+        <main>
+          <h2 class="main-title">What is Sass?</h2>
+          <p class="main-p main-p1"><!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                
+            </body>
+            </html>
+            Sass is essentially an extension of CSS which adds in lots of cool
+            features which are not available in vanilla CSS. With Sass we can
+            write CSS code in a cleaner, more organised format and then compile
+            the code straight into CSS code which can then be read by our html
+            file.
+          </p>
+          <p class="main-p main-p2">
+            Sass allows us to use features such as mixins, imports, nesting,
+            variables, operators, and other logical features of programming
+            languages such as functions and loops. This means we can write
+            large-scale projects more easily without needing to repeat ourselves
+            and make our code more organised and easier for others to read.
+          </p>
+        </main>
+        <!-- Article -->
+        <article>
+          <h2 class="article-title">How do we write Sass?</h2>
+          <p class="article-text">
+            Sass is a preprocessor which means that we first write our styles in
+            a .scss file and then use a compiler such as a text editor extension
+            to convert the scss code into a normal css stylesheet, ready to be
+            accessed by our html file and rendered by the browser.
+          </p>
+          <h3 class="variables-title">Variables:</h3>
+          <p>
+            Variables allow us to store property values inside which can be
+            reused throughout our code. This saves us needing to repeatedly type
+            out frquently used property values such as color or font sizes.
+          </p>
+
+          <p>
+            Variables also allow us to have a single source location for the
+            property value which we can edit in just one place, the values will
+            then be changed for all the elements using this variable in the rest
+            of the page. This helps to make our code easier to read, more
+            efficient to write, and easier to edit and make changes to our
+            existing code.
+          </p>
+
+          <p>
+            We can declare a variable by using the '$' symbol and then assigning
+            our variable a name e.g. '$fontSize: 20px;'. Now whenever we assign
+            an element with 'font-size: $fontSize;', it will always be 20px
+            unless we change the value of the variable at it's source.
+          </p>
+          <h3 class="mixins-title">Mixins:</h3>
+          <p>
+            Mixins are another feature of Sass which allows us to reuse blocks
+            of our code to help speed up writing our code and also keeping it
+            DRY.
+          </p>
+          <p>
+            Mixins work in a similar way to how functions work in most
+            programming languages. We first declare a mixin using @mixin and
+            then assign it a name e.g. mixinName and then assign the mixin a set
+            of parameters as placeholders in which arguments may be passed
+            through. Inside the curly brackets '{ }' of the mixin we can then
+            include any properties and their values which we want to reuse.
+          </p>
+          <p>
+            To use our saved block of code. Within the desired selector, we just
+            need to use @include mixinName() and then any arguments we wish to
+            pass through. The selector will then take on all of the saved
+            properties in our mixin!
+          </p>
+
+          <h3 class="imports-title">Modules & Imports:</h3>
+
+          <p>
+            When we are working on large projects, it is common for us to have
+            often very long stylesheets which can become difficult to read an
+            keep track of. With Sass, we can modulate our code by breaking the
+            stylesheet into smaller sections and importing them onto our main
+            stylesheet from other files.
+          </p>
+
+          <p>
+            All we need to do is move our code into a new stylesheet and then
+            use @import on our main stylesheet and then link the file path of
+            the of the newly created stylesheet. This allows our main stylesheet
+            to locate where the new stylesheet is which contains our code, which
+            then allows is to be compiled into our CSS stylesheet and rendered
+            through our html file.
+          </p>
+
+          <h3 class="nesting-title">Nesting:</h3>
+          <p>
+            Nesting allows us to structure our CSS code in a similar format to
+            our html code. This makes it much easier to read our code and also
+            allows us to see the parent/child relationships between the elements
+            in which we are styling more easily.
+          </p>
+
+          <h3 class="extensions-title">Extensions & Inheritance:</h3>
+          <p>
+            Extensions work in a simlar way to mixins. They allow us to use an
+            element's properties and then allows us to extend those properties
+            to another element of our choosing which will then inherit those
+            properties.
+          </p>
+
+          <p>
+            Inside the element we want to change, we merely use the @extend
+            command, along with the selector for the specific element we want to
+          </p>
+
+          <h3 class="operator-title">Operators:</h3>
+          <p>
+            Another cool feature which allows us to use programming techniques
+            in our CSS code is the use of operators. We can use mathemtical
+            operators such as '+', '-', '/', '*', or we can use logical
+            operators such as '&' to perform calculations with our CSS code.
+          </p>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+          <ul class="footer-section">
+            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Back to Top</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
